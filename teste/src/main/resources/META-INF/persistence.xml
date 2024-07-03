@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+      http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+    version="2.1">
+    <persistence-unit name="julia" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Broomstick</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Cauldron</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Enemy</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.House</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.MagicalCreature</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.MagicalItem</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Mission</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Place</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Player</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Spell</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Student</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegac.Subject</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Teacher</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Team</class>
+        <class>br.edu.unifei.ecot13.hogwartsLegacy.Wand</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/julia?zeroDateTimeBehavior=convertToNull" />
+            <property name="javax.persistence.jdbc.user" value="Julia" />
+            <property name="javax.persistence.jdbc.password" value="Admin" />
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
+            <property name="javax.persistence.schema-generation.database.action" value="none" />
+        </properties>
+    </persistence-unit>
+</persistence>
